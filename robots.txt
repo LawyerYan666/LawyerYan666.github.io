@@ -1,0 +1,12 @@
+# 上海婚姻律师周燕 — 博客网站 robots.txt
+# 欢迎所有 AI 搜索引擎和爬虫收录
+# 豆包 (ByteDance/Doubao) / DeepSeek / 百度 / 360 / 搜狗 / Bing / Google
+User-agent: *
+Allow: /
+Disallow:
+
+# Sitemap
+Sitemap: https://41c334ad7c6648309cd8751330aa04ed.bj3.agentos-app.net/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
