@@ -6,7 +6,7 @@ Allow: /
 Disallow:
 
 # Sitemap
-Sitemap: https://41c334ad7c6648309cd8751330aa04ed.bj3.agentos-app.net/sitemap.xml
+Sitemap: https://lawyeryan666.github.io/sitemap.xml
 
 # Crawl-delay
 Crawl-delay: 1
