@@ -19,7 +19,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://lawyeryan666.github.io/series/%E9%A6%96%E6%A1%88%E6%8F%AD%E7%A7%98.html</loc>
+    <loc>https://lawyeryan666.github.io/series/%E5%AE%B6%E4%BA%8B%E6%96%B0%E8%A7%84.html</loc>
+    <lastmod>2026-08-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://lawyeryan666.github.io/series/%E6%A1%88%E4%BE%8B%E6%8F%AD%E7%A7%98.html</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -44,12 +50,6 @@
   </url>
   <url>
     <loc>https://lawyeryan666.github.io/series/%E6%83%85%E6%84%9F%E6%B4%9E%E8%A7%81.html</loc>
-    <lastmod>2026-08-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://lawyeryan666.github.io/series/%E5%AE%B6%E4%BA%8B%E6%96%B0%E8%A7%84.html</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
