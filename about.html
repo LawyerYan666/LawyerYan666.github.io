@@ -92,7 +92,7 @@ img{max-width:100%;height:auto}
 .section-title::before{content:"";width:4px;height:22px;background:var(--wine);border-radius:2px}
 
 /* Article cards */
-.article-list{display:flex;flex-direction:column;gap:20px;margin-bottom:60px}
+.article-list{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:60px}
 .article-card{background:var(--card);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow-sm);border:1px solid var(--border-light);transition:all .35s ease}
 .article-card:hover{box-shadow:var(--shadow);transform:translateY(-3px);border-color:var(--border)}
 .article-card .series-badge{display:inline-block;padding:4px 14px;border-radius:6px;font-size:12px;font-weight:700;color:#fff;margin-bottom:14px;letter-spacing:.3px}
@@ -103,6 +103,8 @@ img{max-width:100%;height:auto}
 .article-card .meta{display:flex;align-items:center;gap:16px;font-size:13px;color:var(--text-muted);flex-wrap:wrap}
 .article-card .meta .tags{display:flex;gap:6px;flex-wrap:wrap}
 .article-card .meta .tag{background:var(--bg-warm);border:1px solid var(--border-light);padding:3px 10px;border-radius:20px;color:var(--text-muted);font-size:12px}
+.article-card.series-latest .series-more{display:inline-block;margin-top:6px;font-size:14px;font-weight:600;text-decoration:none;transition:all .2s ease}
+.article-card.series-latest .series-more:hover{transform:translateX(4px);text-decoration:underline}
 .empty-state{text-align:center;padding:60px 20px;color:var(--text-muted)}
 .empty-state p{font-size:17px;line-height:1.8}
 
@@ -247,6 +249,7 @@ img{max-width:100%;height:auto}
   .section-title{font-size:18px}
   .article-card{padding:20px}
   .article-card h2{font-size:17px}
+  .article-list{grid-template-columns:1fr}
   .about-section{padding:24px}
   .cta-box{padding:28px 20px}
   .cta-box p{font-size:15px}
@@ -368,7 +371,7 @@ img{max-width:100%;height:auto}
       
     <div class="testimonial-card">
       <div class="quote-icon">"</div>
-      <div class="text">美女再学个心理师吧！好合适，做个感情顾问也会好棒。</div>
+      <div class="text">这个老师分析得很有道理。</div>
       <div class="author">
         <div class="author-avatar">A</div>
         <div>
@@ -379,7 +382,7 @@ img{max-width:100%;height:auto}
     </div>
     <div class="testimonial-card">
       <div class="quote-icon">"</div>
-      <div class="text">人间清醒周大状！</div>
+      <div class="text">我们不光是律师更像心里师。</div>
       <div class="author">
         <div class="author-avatar">B</div>
         <div>
@@ -401,7 +404,7 @@ img{max-width:100%;height:auto}
     </div>
     <div class="testimonial-card">
       <div class="quote-icon">"</div>
-      <div class="text">果断关注你，句句大实话。</div>
+      <div class="text">律师太棒了，关注了。</div>
       <div class="author">
         <div class="author-avatar">D</div>
         <div>
@@ -412,7 +415,7 @@ img{max-width:100%;height:auto}
     </div>
     <div class="testimonial-card">
       <div class="quote-icon">"</div>
-      <div class="text">还是律师思路清晰，支持律师，大家如果有问题都及时咨询律师的话，就不会有太多难以抉择与割舍。</div>
+      <div class="text">律师一针见血。</div>
       <div class="author">
         <div class="author-avatar">E</div>
         <div>
@@ -423,7 +426,7 @@ img{max-width:100%;height:auto}
     </div>
     <div class="testimonial-card">
       <div class="quote-icon">"</div>
-      <div class="text">思维逻辑很强，能一针见血的看到问题所在。</div>
+      <div class="text">关注一波，厉害的 犀利，找到问题关键。</div>
       <div class="author">
         <div class="author-avatar">F</div>
         <div>
