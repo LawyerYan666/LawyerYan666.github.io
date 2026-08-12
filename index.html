@@ -92,7 +92,7 @@ img{max-width:100%;height:auto}
 .section-title::before{content:"";width:4px;height:22px;background:var(--wine);border-radius:2px}
 
 /* Article cards */
-.article-list{display:flex;flex-direction:column;gap:20px;margin-bottom:60px}
+.article-list{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:60px}
 .article-card{background:var(--card);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow-sm);border:1px solid var(--border-light);transition:all .35s ease}
 .article-card:hover{box-shadow:var(--shadow);transform:translateY(-3px);border-color:var(--border)}
 .article-card .series-badge{display:inline-block;padding:4px 14px;border-radius:6px;font-size:12px;font-weight:700;color:#fff;margin-bottom:14px;letter-spacing:.3px}
@@ -103,6 +103,8 @@ img{max-width:100%;height:auto}
 .article-card .meta{display:flex;align-items:center;gap:16px;font-size:13px;color:var(--text-muted);flex-wrap:wrap}
 .article-card .meta .tags{display:flex;gap:6px;flex-wrap:wrap}
 .article-card .meta .tag{background:var(--bg-warm);border:1px solid var(--border-light);padding:3px 10px;border-radius:20px;color:var(--text-muted);font-size:12px}
+.article-card.series-latest .series-more{display:inline-block;margin-top:6px;font-size:14px;font-weight:600;text-decoration:none;transition:all .2s ease}
+.article-card.series-latest .series-more:hover{transform:translateX(4px);text-decoration:underline}
 .empty-state{text-align:center;padding:60px 20px;color:var(--text-muted)}
 .empty-state p{font-size:17px;line-height:1.8}
 
@@ -247,6 +249,7 @@ img{max-width:100%;height:auto}
   .section-title{font-size:18px}
   .article-card{padding:20px}
   .article-card h2{font-size:17px}
+  .article-list{grid-template-columns:1fr}
   .about-section{padding:24px}
   .cta-box{padding:28px 20px}
   .cta-box p{font-size:15px}
@@ -323,305 +326,55 @@ img{max-width:100%;height:auto}
   </div>
   <div class="article-list">
     
-    <article class="article-card">
+    <article class="article-card series-latest">
       <span class="series-badge" style="background:#6B4226">家事新规</span>
       <h2><a href="/article/ruku-anli-tuxiong-jiangzhen.html">入库案例|恋爱期间，女方什么样的行为构成借由婚姻索取财物？涂某雄诉蒋某珍婚约财产纠纷案—— 上海婚姻律师周燕</a></h2>
       <p class="excerpt">恋爱期间以结婚为条件不断索要财物，分手后能否要求返还？浙江两级法院认定构成借婚姻索取财物，支持全额返还钱款近6万+金戒指。</p>
       <div class="meta">
         <span>2026-08-12</span>
         <span>5 分钟阅读</span>
-        <div class="tags"><span class="tag">家事新规</span><span class="tag">入库案例</span><span class="tag">借婚姻索取财物</span><span class="tag">婚约财产</span><span class="tag">彩礼返还</span><span class="tag">民法典</span></div>
       </div>
+      <a class="series-more" href="/series/%E5%AE%B6%E4%BA%8B%E6%96%B0%E8%A7%84.html" style="color:#6B4226">查看「家事新规」全部 7 篇 →</a>
     </article>
-    <article class="article-card">
-      <span class="series-badge" style="background:#6B4226">家事新规</span>
-      <h2><a href="/article/ruku-anli-zhangwen-songxin.html">入库案例|已经领证结婚了，怎么判断女方是否存在借婚姻索取财物？张某文诉宋某欣离婚纠纷案—— 上海婚姻律师周燕</a></h2>
-      <p class="excerpt">女方隐瞒婚史、婚后拒绝同房并以各种理由索要钱财，四年间涉及三起离婚纠纷——山东高院改判支持全额返还彩礼86000元。</p>
-      <div class="meta">
-        <span>2026-08-12</span>
-        <span>4 分钟阅读</span>
-        <div class="tags"><span class="tag">家事新规</span><span class="tag">入库案例</span><span class="tag">借婚姻索取财物</span><span class="tag">彩礼返还</span><span class="tag">离婚纠纷</span><span class="tag">公序良俗</span></div>
-      </div>
-    </article>
-    <article class="article-card">
-      <span class="series-badge" style="background:#2D5F4E">疑难解答</span>
-      <h2><a href="/article/yinan-jieda-lihun-50wen.html">关于离婚50问｜在上海，想离婚，不知道这些100%会吃亏—— 上海婚姻律师周燕</a></h2>
-      <p class="excerpt">上海二中院「关于离婚50问」权威梳理：从法定离婚事由、彩礼返还、共同财产与房产分割，到子女抚养、探望权、债务认定，50个高频离婚难题一次说清，婚前婚后都该看看。</p>
-      <div class="meta">
-        <span>2026-08-12</span>
-        <span>20 分钟阅读</span>
-        <div class="tags"><span class="tag">离婚</span><span class="tag">离婚50问</span><span class="tag">婚姻家事</span><span class="tag">财产分割</span><span class="tag">子女抚养</span><span class="tag">房产分割</span><span class="tag">上海二中院</span><span class="tag">彩礼返还</span><span class="tag">夫妻共同债务</span></div>
-      </div>
-    </article>
-    <article class="article-card">
+    <article class="article-card series-latest">
       <span class="series-badge" style="background:#8B1538">首案揭秘</span>
       <h2><a href="/article/shouan-jiemi-nvtongxing-peiou-fuyangquan.html">女同性恋一个供卵一个生，分手能跟夫妻离婚一样共同抚养孩子吗？全国女同性恋伴侣子女的监护权、抚养权纠纷第一案，法院这样判—— 上海婚姻律师周燕</a></h2>
       <p class="excerpt">2020年厦门，一对女同性恋伴侣因"一个供卵、一个生育"的女儿闹上法庭，争夺抚养权。这是全国首例同性伴侣子女抚养权纠纷案。法院如何认定亲子关系？基因母亲能拿到抚养权吗？判决背后有哪些必须知道的法律风险？</p>
       <div class="meta">
         <span>2026-08-11</span>
         <span>7 分钟阅读</span>
-        <div class="tags"><span class="tag">同性伴侣</span><span class="tag">抚养权</span><span class="tag">监护权</span><span class="tag">亲子关系</span><span class="tag">辅助生殖</span><span class="tag">代孕</span><span class="tag">首案</span><span class="tag">湖里法院</span><span class="tag">民法典</span><span class="tag">上海婚姻律师</span><span class="tag">首案揭秘</span></div>
       </div>
+      <a class="series-more" href="/series/%E9%A6%96%E6%A1%88%E6%8F%AD%E7%A7%98.html" style="color:#8B1538">查看「首案揭秘」全部 2 篇 →</a>
     </article>
-    <article class="article-card">
-      <span class="series-badge" style="background:#8B1538">首案揭秘</span>
-      <h2><a href="/article/shouan-jiemi-tongxing-hunyin-dengji.html">男同性恋去领结婚证，民政局能同意吗？全国同性恋婚姻登记第一案，法院这样判—— 上海婚姻律师周燕</a></h2>
-      <p class="excerpt">2015年长沙，两个男人到民政局申请结婚登记被当场拒绝，随后把民政局告上法庭。这是全国首例同性恋婚姻登记行政诉讼案，法院如何裁判？民法典实施后，同性婚姻登记的法律地位有无变化？同性伴侣又该如何在现行法律框架内保护彼此？</p>
-      <div class="meta">
-        <span>2026-08-11</span>
-        <span>7 分钟阅读</span>
-        <div class="tags"><span class="tag">同性婚姻</span><span class="tag">婚姻登记</span><span class="tag">行政诉讼</span><span class="tag">首案</span><span class="tag">意定监护</span><span class="tag">公序良俗</span><span class="tag">婚姻法</span><span class="tag">民法典</span><span class="tag">上海婚姻律师</span><span class="tag">首案揭秘</span></div>
-      </div>
-    </article>
-    <article class="article-card">
-      <span class="series-badge" style="background:#2D5F4E">疑难解答</span>
-      <h2><a href="/article/yinan-fadawang-01.html">疑难解答｜离婚孩子非要跟条件差的一方，法院会怎么判？最高法一锤定音—— 上海婚姻律师周燕</a></h2>
-      <p class="excerpt">离婚案件中孩子坚持跟随经济条件较差一方，法院如何裁判？从子女年龄区分处理，物质条件不是唯一考量。</p>
-      <div class="meta">
-        <span>2026-08-11</span>
-        <span>2 分钟阅读</span>
-        <div class="tags"><span class="tag">婚姻家事</span><span class="tag">抚养权</span><span class="tag">离婚诉讼</span><span class="tag">子女抚养</span><span class="tag">法答网</span><span class="tag">最高院</span></div>
-      </div>
-    </article>
-    <article class="article-card">
-      <span class="series-badge" style="background:#2D5F4E">疑难解答</span>
-      <h2><a href="/article/yinan-fadawang-02.html">疑难解答｜起诉离婚能顺带要分居期间的抚养费吗？最高法给了明确答案—— 上海婚姻律师周燕</a></h2>
-      <p class="excerpt">夫妻一方起诉离婚时，能否在离婚诉讼中一并向另一方主张分居期间的子女抚养费？最高法给出程序与实体双重解答。</p>
-      <div class="meta">
-        <span>2026-08-11</span>
-        <span>1 分钟阅读</span>
-        <div class="tags"><span class="tag">婚姻家事</span><span class="tag">抚养费</span><span class="tag">分居期间</span><span class="tag">离婚诉讼</span><span class="tag">法答网</span><span class="tag">最高院</span></div>
-      </div>
-    </article>
-    <article class="article-card">
-      <span class="series-badge" style="background:#2D5F4E">疑难解答</span>
-      <h2><a href="/article/yinan-fadawang-03.html">疑难解答｜没离婚，能以孩子名义要分居期间的抚养费吗？法院这样认定—— 上海婚姻律师周燕</a></h2>
-      <p class="excerpt">男女双方未离婚，一方以子女名义主张分居期间抚养费应否支持？关键看父母是否'拒不履行抚养义务'。</p>
-      <div class="meta">
-        <span>2026-08-11</span>
-        <span>2 分钟阅读</span>
-        <div class="tags"><span class="tag">婚姻家事</span><span class="tag">抚养费</span><span class="tag">分居期间</span><span class="tag">子女抚养</span><span class="tag">法答网</span><span class="tag">最高院</span></div>
-      </div>
-    </article>
-    <article class="article-card">
-      <span class="series-badge" style="background:#2D5F4E">疑难解答</span>
-      <h2><a href="/article/yinan-fadawang-04.html">疑难解答｜离婚诉讼中配偶成了无民事行为能力人，谁来替TA打官司？最高法说清了—— 上海婚姻律师周燕</a></h2>
-      <p class="excerpt">离婚诉讼中一方为无民事行为能力人且无其他成年近亲属担任监护人，法院如何指定法定代理人？</p>
-      <div class="meta">
-        <span>2026-08-11</span>
-        <span>2 分钟阅读</span>
-        <div class="tags"><span class="tag">婚姻家事</span><span class="tag">无民事行为能力人</span><span class="tag">监护</span><span class="tag">离婚诉讼</span><span class="tag">法答网</span><span class="tag">最高院</span></div>
-      </div>
-    </article>
-    <article class="article-card">
-      <span class="series-badge" style="background:#2D5F4E">疑难解答</span>
-      <h2><a href="/article/yinan-fadawang-05.html">疑难解答｜离婚协议写了违约金，对方不给折价款能罚吗？最高法这样认定—— 上海婚姻律师周燕</a></h2>
-      <p class="excerpt">离婚协议中共同财产分割折价款违约金条款效力如何认定，能否调整？区分身份关系与财产部分分别处理。</p>
-      <div class="meta">
-        <span>2026-08-11</span>
-        <span>2 分钟阅读</span>
-        <div class="tags"><span class="tag">婚姻家事</span><span class="tag">离婚协议</span><span class="tag">违约金</span><span class="tag">财产分割</span><span class="tag">法答网</span><span class="tag">最高院</span></div>
-      </div>
-    </article>
-    <article class="article-card">
-      <span class="series-badge" style="background:#2D5F4E">疑难解答</span>
-      <h2><a href="/article/yinan-fadawang-06.html">疑难解答｜只起诉要抚养费，诉讼费按多少收？最高法的答复出乎很多人意料—— 上海婚姻律师周燕</a></h2>
-      <p class="excerpt">抚养费纠纷诉讼费如何收取？未成年子女仅诉请给付抚养费属'其他非财产性案件'，每件50至100元。</p>
-      <div class="meta">
-        <span>2026-08-11</span>
-        <span>2 分钟阅读</span>
-        <div class="tags"><span class="tag">婚姻家事</span><span class="tag">抚养费</span><span class="tag">诉讼费</span><span class="tag">程序</span><span class="tag">法答网</span><span class="tag">最高院</span></div>
-      </div>
-    </article>
-    <article class="article-card">
-      <span class="series-badge" style="background:#2D5F4E">疑难解答</span>
-      <h2><a href="/article/yinan-fadawang-07.html">疑难解答｜申请强制执行抚养费，过了时效还能要吗？最高法明确说了—— 上海婚姻律师周燕</a></h2>
-      <p class="excerpt">申请执行人申请给付抚养费是否受申请执行时效限制？基于弱势群体保护，不应受执行时效限制。</p>
-      <div class="meta">
-        <span>2026-08-11</span>
-        <span>2 分钟阅读</span>
-        <div class="tags"><span class="tag">婚姻家事</span><span class="tag">抚养费</span><span class="tag">申请执行</span><span class="tag">执行时效</span><span class="tag">法答网</span><span class="tag">最高院</span></div>
-      </div>
-    </article>
-    <article class="article-card">
-      <span class="series-badge" style="background:#2D5F4E">疑难解答</span>
-      <h2><a href="/article/yinan-fadawang-08.html">疑难解答｜法院怎么做家庭教育指导才有效？最高法给出5个实操方向—— 上海婚姻律师周燕</a></h2>
-      <p class="excerpt">人民法院如何开展家庭教育指导实现最佳效果？诉前、审理、判后多环节，五种实操路径。</p>
-      <div class="meta">
-        <span>2026-08-11</span>
-        <span>2 分钟阅读</span>
-        <div class="tags"><span class="tag">婚姻家事</span><span class="tag">家庭教育指导</span><span class="tag">未成年人</span><span class="tag">法答网</span><span class="tag">最高院</span></div>
-      </div>
-    </article>
-    <article class="article-card">
-      <span class="series-badge" style="background:#2D5F4E">疑难解答</span>
-      <h2><a href="/article/yinan-fadawang-09.html">疑难解答｜代位继承人从没赡养过，凭什么还能均分遗产？最高法这样答—— 上海婚姻律师周燕</a></h2>
-      <p class="excerpt">代位继承人成年后从未履行赡养义务，应否均分遗产？取决于是否符合代位继承构成要件。</p>
-      <div class="meta">
-        <span>2026-08-11</span>
-        <span>2 分钟阅读</span>
-        <div class="tags"><span class="tag">继承</span><span class="tag">代位继承</span><span class="tag">遗产分配</span><span class="tag">赡养</span><span class="tag">法答网</span><span class="tag">最高院</span></div>
-      </div>
-    </article>
-    <article class="article-card">
-      <span class="series-badge" style="background:#2D5F4E">疑难解答</span>
-      <h2><a href="/article/yinan-fadawang-10.html">疑难解答｜遗产管理人能以自己的名义打官司吗？最高法给出关键答复—— 上海婚姻律师周燕</a></h2>
-      <p class="excerpt">遗产管理人是否具有独立诉权？基于遗产管理职责，应认可其在职责范围内享有相应诉权。</p>
-      <div class="meta">
-        <span>2026-08-11</span>
-        <span>3 分钟阅读</span>
-        <div class="tags"><span class="tag">继承</span><span class="tag">遗产管理人</span><span class="tag">独立诉权</span><span class="tag">法答网</span><span class="tag">最高院</span></div>
-      </div>
-    </article>
-    <article class="article-card">
-      <span class="series-badge" style="background:#2D5F4E">疑难解答</span>
-      <h2><a href="/article/yinan-jieda-zuigao-shiwu-49.html">婚姻家事实务49问｜最高院民一庭权威解答，离婚诉讼到子女抚养一次说清—— 上海婚姻律师周燕</a></h2>
-      <p class="excerpt">最高院民一庭《民事审判实务问答》婚姻家事类49个高频难题权威解答：离婚诉讼程序、房产分割、同居事实婚姻、夫妻共同财产、子女抚养……周燕律师逐条整理，覆盖从一审到执行的实操要点。</p>
-      <div class="meta">
-        <span>2026-08-11</span>
-        <span>13 分钟阅读</span>
-        <div class="tags"><span class="tag">婚姻家事</span><span class="tag">实务问答</span><span class="tag">离婚诉讼</span><span class="tag">房产分割</span><span class="tag">夫妻共同财产</span><span class="tag">子女抚养</span><span class="tag">事实婚姻</span><span class="tag">同居关系</span><span class="tag">最高院</span></div>
-      </div>
-    </article>
-    <article class="article-card">
-      <span class="series-badge" style="background:#9B2D6F">情感洞见</span>
-      <h2><a href="/article/qinggan-dongjian-chugui-xiaosan.html">他在外面给小三转了67万，共发了109个520红包，我却还在纠结要不要原谅他—— 上海婚姻律师周燕</a></h2>
-      <p class="excerpt">我直播间里那些被背叛的女人：有人发现结婚12年的老公出轨4年，有人被小三骗了2年才发现对方已婚，有人原谅了出轨男却换来二次背叛。这些真实故事，给每一个在婚姻里迷茫的你。</p>
-      <div class="meta">
-        <span>2026-08-10</span>
-        <span>5 分钟阅读</span>
-        <div class="tags"><span class="tag">出轨</span><span class="tag">小三</span><span class="tag">婚姻背叛</span><span class="tag">情感修复</span><span class="tag">女性成长</span><span class="tag">上海婚姻律师</span><span class="tag">情感洞见</span><span class="tag">赠与第三者</span></div>
-      </div>
-    </article>
-    <article class="article-card">
-      <span class="series-badge" style="background:#9B2D6F">情感洞见</span>
-      <h2><a href="/article/qinggan-dongjian-gaibugai-lihun.html">结婚5年，我每天睡前都在想同一个问题：要不要离婚—— 上海婚姻律师周燕</a></h2>
-      <p class="excerpt">我直播间里那些下不了离婚决心的女人：有人因为婆婆想离，有人因为老公不赚钱想离，有人因为挨了一巴掌想离。但我每句话都像刀子，割开了婚姻最残酷的真相。</p>
-      <div class="meta">
-        <span>2026-08-10</span>
-        <span>6 分钟阅读</span>
-        <div class="tags"><span class="tag">离婚决策</span><span class="tag">婚姻经营</span><span class="tag">女性成长</span><span class="tag">情感困惑</span><span class="tag">婆媳关系</span><span class="tag">上海婚姻律师</span><span class="tag">情感洞见</span></div>
-      </div>
-    </article>
-    <article class="article-card">
-      <span class="series-badge" style="background:#9B2D6F">情感洞见</span>
-      <h2><a href="/article/qinggan-dongjian-hunqian-caichan.html">结婚前夜，我妈把我拉到一边说：你卡里的钱，婚后千万别再往里存了—— 上海婚姻律师周燕</a></h2>
-      <p class="excerpt">你以为爱他就该毫无保留？我直播间里的真实故事告诉你：婚前不设防的女人，婚后都哭了。从公司股权到婚前存款卡，从彩礼到房产加名，这些血泪教训每个女人都该提前知道。</p>
-      <div class="meta">
-        <span>2026-08-10</span>
-        <span>5 分钟阅读</span>
-        <div class="tags"><span class="tag">婚前财产</span><span class="tag">财产保护</span><span class="tag">夫妻财产约定</span><span class="tag">女性成长</span><span class="tag">婚姻安全</span><span class="tag">上海婚姻律师</span><span class="tag">情感洞见</span></div>
-      </div>
-    </article>
-    <article class="article-card">
+    <article class="article-card series-latest">
       <span class="series-badge" style="background:#B8860B">胜诉密码</span>
       <h2><a href="/article/shengsu-lihun-xieyi-caipan.html">签完离婚协议才发现吃亏？上海地区离婚协议大数据报告：想重来几乎不可能—— 上海婚姻律师周燕</a></h2>
       <p class="excerpt">基于北大法宝63份上海法院真实判决，深度剖析离婚协议裁判规则：撤销协议零支持率、抚养费增易减难、探望变更从严。附30件代表性类案链接+律师实务建议。</p>
       <div class="meta">
         <span>2026-08-10</span>
         <span>13 分钟阅读</span>
-        <div class="tags"><span class="tag">离婚协议</span><span class="tag">裁判规则</span><span class="tag">财产分割</span><span class="tag">抚养费</span><span class="tag">探望权</span><span class="tag">撤销协议</span><span class="tag">上海法院</span></div>
       </div>
+      <a class="series-more" href="/series/%E8%83%9C%E8%AF%89%E5%AF%86%E7%A0%81.html" style="color:#B8860B">查看「胜诉密码」全部 3 篇 →</a>
     </article>
-    <article class="article-card">
-      <span class="series-badge" style="background:#B8860B">胜诉密码</span>
-      <h2><a href="/article/shengsu-mima-bu-tongyi-lihun.html">想离婚对方不同意怎么办？不同意孩子归你怎么办？不同意分财产怎么办？上海地区离婚纠纷大数据报告：没有离不掉的婚—— 上海婚姻律师周燕</a></h2>
-      <p class="excerpt"></p>
-      <div class="meta">
-        <span>2026-08-10</span>
-        <span>12 分钟阅读</span>
-        <div class="tags"><span class="tag">离婚纠纷</span><span class="tag">离婚诉讼</span><span class="tag">感情破裂</span><span class="tag">财产分割</span><span class="tag">抚养权</span><span class="tag">离婚协议</span><span class="tag">假离婚</span><span class="tag">隐匿财产</span><span class="tag">家暴</span><span class="tag">上海婚姻律师</span><span class="tag">离婚大数据</span></div>
-      </div>
-    </article>
-    <article class="article-card">
-      <span class="series-badge" style="background:#B8860B">胜诉密码</span>
-      <h2><a href="/article/shengsu-mima-disanzhe-zengyu.html">老公给小三转账？给她买房买车？上海地区起诉第三者赠与纠纷大数据报告：100%认定赠与无效，92%判令全额返还—— 上海婚姻律师周燕</a></h2>
-      <p class="excerpt"></p>
-      <div class="meta">
-        <span>2026-08-10</span>
-        <span>12 分钟阅读</span>
-        <div class="tags"><span class="tag">赠与合同纠纷</span><span class="tag">第三者</span><span class="tag">夫妻共同财产</span><span class="tag">公序良俗</span><span class="tag">赠与无效</span><span class="tag">全额返还</span><span class="tag">婚外情</span><span class="tag">上海婚姻律师</span><span class="tag">离婚大数据</span></div>
-      </div>
-    </article>
-    <article class="article-card">
+    <article class="article-card series-latest">
       <span class="series-badge" style="background:#2D5F4E">疑难解答</span>
-      <h2><a href="/article/yinan-jieda-fangchan-fenge.html">房产分割｜婚前婚后买房，写谁的名字离婚时分得最多？—— 上海婚姻律师周燕</a></h2>
-      <p class="excerpt">婚前买房、婚后买房、父母出资买房……18种买房场景，周燕律师用一张表告诉你房子到底归谁。加不加名、谁出首付、谁还贷款，差一个字就是一套房。</p>
+      <h2><a href="/article/yinan-jieda-lihun-50wen.html">关于离婚50问｜在上海，想离婚，不知道这些100%会吃亏—— 上海婚姻律师周燕</a></h2>
+      <p class="excerpt">上海二中院「关于离婚50问」权威梳理：从法定离婚事由、彩礼返还、共同财产与房产分割，到子女抚养、探望权、债务认定，50个高频离婚难题一次说清，婚前婚后都该看看。</p>
+      <div class="meta">
+        <span>2026-08-12</span>
+        <span>20 分钟阅读</span>
+      </div>
+      <a class="series-more" href="/series/%E7%96%91%E9%9A%BE%E8%A7%A3%E7%AD%94.html" style="color:#2D5F4E">查看「疑难解答」全部 15 篇 →</a>
+    </article>
+    <article class="article-card series-latest">
+      <span class="series-badge" style="background:#9B2D6F">情感洞见</span>
+      <h2><a href="/article/qinggan-dongjian-chugui-xiaosan.html">他在外面给小三转了67万，共发了109个520红包，我却还在纠结要不要原谅他—— 上海婚姻律师周燕</a></h2>
+      <p class="excerpt">我直播间里那些被背叛的女人：有人发现结婚12年的老公出轨4年，有人被小三骗了2年才发现对方已婚，有人原谅了出轨男却换来二次背叛。这些真实故事，给每一个在婚姻里迷茫的你。</p>
       <div class="meta">
         <span>2026-08-10</span>
         <span>5 分钟阅读</span>
-        <div class="tags"><span class="tag">房产分割</span><span class="tag">婚前买房</span><span class="tag">婚后买房</span><span class="tag">父母出资买房</span><span class="tag">房产加名</span><span class="tag">离婚财产分割</span><span class="tag">共同还贷</span><span class="tag">房产证</span><span class="tag">首付</span></div>
       </div>
-    </article>
-    <article class="article-card">
-      <span class="series-badge" style="background:#2D5F4E">疑难解答</span>
-      <h2><a href="/article/yinan-jieda-hunqian-tongju.html">婚前同居｜不领证就同居，生了孩子买了房，分手时谁吃亏？—— 上海婚姻律师周燕</a></h2>
-      <p class="excerpt">同居期间生的孩子谁来养？520红包分手要还吗？一起买的车怎么分？一文讲透婚前同居最常见的法律风险，建议收藏。</p>
-      <div class="meta">
-        <span>2026-08-10</span>
-        <span>4 分钟阅读</span>
-        <div class="tags"><span class="tag">婚前同居</span><span class="tag">非婚生子女</span><span class="tag">彩礼返还</span><span class="tag">赠与</span><span class="tag">同居财产分割</span><span class="tag">抚养费</span><span class="tag">分手</span></div>
-      </div>
-    </article>
-    <article class="article-card">
-      <span class="series-badge" style="background:#2D5F4E">疑难解答</span>
-      <h2><a href="/article/yinan-jieda-jiehun-lihun.html">结婚离婚｜分居两年自动离婚？离婚冷静期怎么熬？全职太太能多分财产吗？—— 上海婚姻律师周燕</a></h2>
-      <p class="excerpt">从结婚登记到协议离婚到诉讼离婚，你最想问又不敢问的15个问题，周燕律师一次性回答。分居不等于离婚、出轨不等于净身出户、全职太太有权要补偿。</p>
-      <div class="meta">
-        <span>2026-08-10</span>
-        <span>4 分钟阅读</span>
-        <div class="tags"><span class="tag">离婚程序</span><span class="tag">协议离婚</span><span class="tag">诉讼离婚</span><span class="tag">离婚冷静期</span><span class="tag">抚养权</span><span class="tag">抚养费</span><span class="tag">全职太太</span><span class="tag">离婚损害赔偿</span><span class="tag">出轨</span></div>
-      </div>
-    </article>
-    <article class="article-card">
-      <span class="series-badge" style="background:#6B4226">家事新规</span>
-      <h2><a href="/article/jia-shi-xin-gui-jieyi-er.html">《最高人民法院关于适用〈民法典〉婚姻家庭编的解释（二）》全文（2025.2.1施行）—— 上海婚姻律师周燕</a></h2>
-      <p class="excerpt">《最高人民法院关于适用〈民法典〉婚姻家庭编的解释（二）》（法释〔2025〕1号）全文，重点回应夫妻房产分割、父母出资购房、重婚效力、抢夺藏匿未成年子女等热点。上海婚姻律师周燕整理。</p>
-      <div class="meta">
-        <span>2025-02-01</span>
-        <span>12 分钟阅读</span>
-        <div class="tags"><span class="tag">婚姻家庭编解释二</span><span class="tag">房产分割</span><span class="tag">父母出资购房</span><span class="tag">重婚</span><span class="tag">抢夺子女</span><span class="tag">上海婚姻律师</span></div>
-      </div>
-    </article>
-    <article class="article-card">
-      <span class="series-badge" style="background:#6B4226">家事新规</span>
-      <h2><a href="/article/jia-shi-xin-gui-caili.html">《最高人民法院关于审理涉彩礼纠纷案件适用法律若干问题的规定》全文（2024.2.1施行）—— 上海婚姻律师周燕</a></h2>
-      <p class="excerpt">《最高人民法院关于审理涉彩礼纠纷案件适用法律若干问题的规定》（法释〔2024〕1号）全文，首次以司法解释明确彩礼范围、返还规则及诉讼主体。上海婚姻律师周燕整理。</p>
-      <div class="meta">
-        <span>2024-02-01</span>
-        <span>3 分钟阅读</span>
-        <div class="tags"><span class="tag">彩礼返还</span><span class="tag">涉彩礼纠纷</span><span class="tag">彩礼规定</span><span class="tag">婚姻法</span><span class="tag">上海婚姻律师</span></div>
-      </div>
-    </article>
-    <article class="article-card">
-      <span class="series-badge" style="background:#6B4226">家事新规</span>
-      <h2><a href="/article/jia-shi-xin-gui-jicheng-jieyi-yi.html">《最高人民法院关于适用〈民法典〉继承编的解释（一）》全文（2021.1.1施行）—— 上海婚姻律师周燕</a></h2>
-      <p class="excerpt">《最高人民法院关于适用〈民法典〉继承编的解释（一）》（法释〔2020〕23号）全文，系统梳理法定继承、遗嘱继承与遗赠、遗产处理等继承纠纷裁判规则。上海婚姻律师周燕整理。</p>
-      <div class="meta">
-        <span>2021-01-01</span>
-        <span>11 分钟阅读</span>
-        <div class="tags"><span class="tag">继承编解释一</span><span class="tag">继承</span><span class="tag">遗嘱</span><span class="tag">法定继承</span><span class="tag">遗产分割</span><span class="tag">上海婚姻律师</span></div>
-      </div>
-    </article>
-    <article class="article-card">
-      <span class="series-badge" style="background:#6B4226">家事新规</span>
-      <h2><a href="/article/jia-shi-xin-gui-jieyi-yi.html">《最高人民法院关于适用〈民法典〉婚姻家庭编的解释（一）》全文（2021.1.1施行）—— 上海婚姻律师周燕</a></h2>
-      <p class="excerpt">《最高人民法院关于适用〈民法典〉婚姻家庭编的解释（一）》（法释〔2020〕22号）全文，系统梳理结婚、夫妻关系、离婚、抚养、继承等婚姻家庭纠纷裁判规则。上海婚姻律师周燕整理。</p>
-      <div class="meta">
-        <span>2021-01-01</span>
-        <span>26 分钟阅读</span>
-        <div class="tags"><span class="tag">婚姻家庭编解释一</span><span class="tag">离婚</span><span class="tag">彩礼返还</span><span class="tag">抚养权</span><span class="tag">婚姻无效</span><span class="tag">上海婚姻律师</span></div>
-      </div>
-    </article>
-    <article class="article-card">
-      <span class="series-badge" style="background:#6B4226">家事新规</span>
-      <h2><a href="/article/jia-shi-xin-gui-minfadian-hunji.html">《中华人民共和国民法典》婚姻家庭编·继承编全文（2021.1.1施行）—— 上海婚姻律师周燕</a></h2>
-      <p class="excerpt">《民法典》第五编婚姻家庭与第六编继承全文，涵盖结婚、离婚、抚养、财产分割、继承等规则。上海婚姻律师周燕整理，供婚姻家事当事人查阅。</p>
-      <div class="meta">
-        <span>2021-01-01</span>
-        <span>29 分钟阅读</span>
-        <div class="tags"><span class="tag">民法典</span><span class="tag">婚姻家庭编</span><span class="tag">继承编</span><span class="tag">婚姻法</span><span class="tag">继承法</span><span class="tag">上海婚姻律师</span></div>
-      </div>
+      <a class="series-more" href="/series/%E6%83%85%E6%84%9F%E6%B4%9E%E8%A7%81.html" style="color:#9B2D6F">查看「情感洞见」全部 3 篇 →</a>
     </article>
   </div>
 </div>
@@ -697,7 +450,7 @@ img{max-width:100%;height:auto}
       
     <div class="testimonial-card">
       <div class="quote-icon">"</div>
-      <div class="text">哇塞分析的好透彻啊，条理清晰，有的人就会乱给建议。</div>
+      <div class="text">律师太棒了，关注了。</div>
       <div class="author">
         <div class="author-avatar">A</div>
         <div>
@@ -708,7 +461,7 @@ img{max-width:100%;height:auto}
     </div>
     <div class="testimonial-card">
       <div class="quote-icon">"</div>
-      <div class="text">好喜欢周律师。</div>
+      <div class="text">律师说得好。</div>
       <div class="author">
         <div class="author-avatar">B</div>
         <div>
@@ -719,7 +472,7 @@ img{max-width:100%;height:auto}
     </div>
     <div class="testimonial-card">
       <div class="quote-icon">"</div>
-      <div class="text">看了两个你的视频都好喜欢。</div>
+      <div class="text">这个律师可以，不偏不倚。</div>
       <div class="author">
         <div class="author-avatar">C</div>
         <div>
@@ -730,7 +483,7 @@ img{max-width:100%;height:auto}
     </div>
     <div class="testimonial-card">
       <div class="quote-icon">"</div>
-      <div class="text">这个律师讲话条理清晰，思路明确干净利落，好喜欢。</div>
+      <div class="text">还是女律师更了解女性，说的真对。</div>
       <div class="author">
         <div class="author-avatar">D</div>
         <div>
@@ -741,7 +494,7 @@ img{max-width:100%;height:auto}
     </div>
     <div class="testimonial-card">
       <div class="quote-icon">"</div>
-      <div class="text">周律真的棒。</div>
+      <div class="text">第一次刷到周律，感觉逻辑思维好牛啊，给的建议也特别落地。</div>
       <div class="author">
         <div class="author-avatar">E</div>
         <div>
@@ -752,7 +505,7 @@ img{max-width:100%;height:auto}
     </div>
     <div class="testimonial-card">
       <div class="quote-icon">"</div>
-      <div class="text">周律师👏👏👏</div>
+      <div class="text">我好喜欢这个律师姐姐，看了第一个视频就马上关注了。</div>
       <div class="author">
         <div class="author-avatar">F</div>
         <div>
@@ -763,7 +516,7 @@ img{max-width:100%;height:auto}
     </div>
     <div class="testimonial-card">
       <div class="quote-icon">"</div>
-      <div class="text">只能说这律师三观很正。如果搁别的律师有可能会说让你退婚然后拿着彩礼和房子跑。殊不知这风险非常的大，一不小心可能连命都没了。</div>
+      <div class="text">点赞律师。</div>
       <div class="author">
         <div class="author-avatar">G</div>
         <div>
@@ -774,7 +527,7 @@ img{max-width:100%;height:auto}
     </div>
     <div class="testimonial-card">
       <div class="quote-icon">"</div>
-      <div class="text">理性分析 合理建议。</div>
+      <div class="text">真的律师真的好理智好明智。</div>
       <div class="author">
         <div class="author-avatar">H</div>
         <div>
@@ -785,7 +538,7 @@ img{max-width:100%;height:auto}
     </div>
     <div class="testimonial-card">
       <div class="quote-icon">"</div>
-      <div class="text">干脆利落，周律师说的真好。</div>
+      <div class="text">给这个漂亮律师点个赞，比那些只会和稀泥的律师好太多太多了！</div>
       <div class="author">
         <div class="author-avatar">I</div>
         <div>
